@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+main {
+
+    background-color: #f4f7f6; 
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+}
+
+/* Contenedor Principal  */
+.login-container {
+    width: 1000px;
+  height: 500px;
+    background-color: white;
+    border-radius: 25px; 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    overflow: hidden; 
+    position: relative; 
+}
+
+/* --- Paneles ambos*/
+.info-panel,
+.form-panel {
+    flex-basis: 50%; /* Para que ocupen la mitad cad uno*/
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   position: relative;
+}
+
+/* --- Panel azul*/
+.info-panel {
+    background-color:#005fff;
+    color: white;
+}
+
+/* Division */
+.info-panel .divider {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+/* --- parte blanca*/
+.form-panel h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* Division */
+.form-panel .divider {
+    width: 50px;
+    height: 3px;
+    background-color: #005fff;
+  
+}
+
+
+.info-panel .divider {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.form-panel .input-group {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+/* inputs */
+.form-panel input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #dddddd;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none; /* Quita el borde de foco feo */
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px; /* Botones tipo "píldora" */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Botón "Know More"  */
+.btn-outline {
+    padding: 10px;
+    width: 150px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+/* Botón "LOGIN"*/
+.btn-solid {
+    border: none;
+    background-color: #005fff;
+    color: white;
+    /* Ajuste para el botón de login */
+    width: auto; 
+    padding-left: 40px;
+    padding-right: 40px;
+        box-shadow: 5px 5px 5px 5px rgb(195, 195, 195);
+}
+
+
+/* Círculo decorativo blanco en el panel azul */
+
+.info-panel::before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: 35px solid white; /* Usamos un borde grueso para crear el efecto "C" */
+    border-radius: 50%;
+    top: 75%;
+    right: 0;
+    /* Centra el círculo en la línea divisoria (50%) y verticalmente (-50%) */
+    transform: translate(50%, -50%); 
+}
+
+   .cuadrado {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 93%;
+      width: 150px; /* Ancho del cuadrado */
+      height: 150px; /* Alto del cuadrado */
+      border: 35px solid rgb(207, 202, 202);
+      border-radius: 40px;
+      background-color: transparent; /* Color de fondo */
+       transform: rotate(-35deg);
+    }
+ 
+
+
